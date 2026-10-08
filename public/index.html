@@ -106,27 +106,26 @@
 
   <style>
     :root {
-      /* Cream Base Foundations */
+      /* Cream Canvas Foundation */
       --bg-cream: #FBF8F2;
-      --surface-cream: #FFFFFF;
-      --surface-subtle: #F5EFE6;
-      --border-parchment: #E2D7C8;
+      --surface-subtle: #F3ECE1;
+      --border-parchment: #DDCFBF;
 
-      /* Rich Wood & Earth Browns */
+      /* Rich Earth & Timber Browns */
+      --timber-dark: #3E2413;
       --timber-brown: #5C3A21;
-      --timber-hover: #452B18;
       --bark-brown: #7A4E2D;
-      --sand-brown: #8D6B4F;
+      --sand-brown: #D9A26A;
+      --sand-light: #F4E4D0;
       --text-dark: #231C18;
       --text-muted: #5E534B;
 
-      /* Deep & Vivid Emerald Greens */
-      --emerald-deep: #133324;
-      --emerald-forest: #1B4332;
-      --emerald-core: #2D6A4F;
-      --emerald-bright: #40916C;
-      --emerald-vivid: #52B788;
-      --emerald-light: #E8F4EE;
+      /* Emerald Gradient Stops for All Cards */
+      --emerald-gradient-start: #1B4332;
+      --emerald-gradient-mid: #153527;
+      --emerald-gradient-end: #0F281E;
+      --emerald-border: #2D6A4F;
+      --emerald-badge-bg: #E3EFE9;
 
       --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
@@ -147,7 +146,7 @@
 
     /* Top Operational Bar */
     .top-status-bar {
-      background-color: var(--emerald-deep);
+      background-color: var(--emerald-gradient-end);
       color: #E2EFE9;
       border-bottom: 3px solid var(--bark-brown);
       font-size: 0.84rem;
@@ -160,7 +159,7 @@
     }
 
     .top-status-bar span {
-      color: #7BE4B5;
+      color: var(--sand-brown);
     }
 
     .container {
@@ -178,9 +177,9 @@
 
     .badge-location {
       display: inline-block;
-      background-color: var(--emerald-light);
-      color: var(--emerald-core);
-      border: 1px solid var(--emerald-bright);
+      background-color: var(--surface-subtle);
+      color: var(--timber-brown);
+      border: 1px solid var(--bark-brown);
       padding: 5px 14px;
       border-radius: 4px;
       font-size: 0.8rem;
@@ -190,11 +189,12 @@
       margin-bottom: 16px;
     }
 
+    /* Brown Header */
     h1 {
       font-size: 2.6rem;
       font-weight: 900;
       letter-spacing: -0.02em;
-      color: var(--emerald-deep);
+      color: var(--timber-dark);
       line-height: 1.15;
       margin-bottom: 10px;
     }
@@ -235,30 +235,34 @@
       cursor: pointer;
     }
 
+    /* Primary Estimate Button */
     .btn-primary {
-      background-color: var(--emerald-core);
+      background-color: #2D6A4F;
       color: #FFFFFF;
-      border: 2px solid var(--emerald-forest);
+      border: 2px solid #1B4332;
       box-shadow: 0 4px 10px rgba(45, 106, 79, 0.25);
     }
 
     .btn-primary:hover {
-      background-color: var(--emerald-forest);
-      border-color: var(--emerald-deep);
+      background-color: #1B4332;
+      border-color: #0F281E;
     }
 
+    /* Rich Brown Buttons with Cream Lettering */
     .btn-secondary {
-      background-color: var(--surface-cream);
-      color: var(--timber-brown);
-      border: 2px solid var(--timber-brown);
+      background-color: var(--timber-brown);
+      color: var(--bg-cream);
+      border: 2px solid #452B18;
+      box-shadow: 0 4px 10px rgba(92, 58, 33, 0.18);
     }
 
     .btn-secondary:hover {
-      background-color: var(--surface-subtle);
-      border-color: var(--timber-hover);
+      background-color: #452B18;
+      border-color: #301E11;
+      color: #FFFFFF;
     }
 
-    /* Trust / Highlight Strip */
+    /* Trust / Highlight Strip (Emerald Gradient Cards) */
     .trust-strip {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -267,26 +271,27 @@
     }
 
     .trust-box {
-      background-color: var(--surface-cream);
-      border: 1px solid var(--border-parchment);
-      border-top: 4px solid var(--emerald-core);
+      background: linear-gradient(145deg, var(--emerald-gradient-start) 0%, var(--emerald-gradient-mid) 60%, var(--emerald-gradient-end) 100%);
+      border: 1px solid var(--emerald-border);
+      border-top: 4px solid var(--sand-brown);
       padding: 16px;
-      border-radius: 6px;
+      border-radius: 8px;
       text-align: center;
       font-size: 0.88rem;
-      box-shadow: 0 2px 6px rgba(92, 58, 33, 0.05);
+      box-shadow: 0 4px 12px rgba(15, 40, 30, 0.12);
+      color: #E2EFE9;
     }
 
     .trust-box strong {
       display: block;
-      color: var(--emerald-deep);
+      color: var(--sand-light);
       font-size: 0.96rem;
       margin-bottom: 4px;
       font-weight: 800;
     }
 
     .trust-box span {
-      color: var(--text-muted);
+      color: #D5E5DC;
     }
 
     /* Section Foundations */
@@ -295,10 +300,11 @@
       border-bottom: 2px solid var(--border-parchment);
     }
 
+    /* Section Title in Rich Brown */
     .section-title {
       font-size: 1.65rem;
       font-weight: 900;
-      color: var(--emerald-deep);
+      color: var(--timber-dark);
       margin-bottom: 6px;
       letter-spacing: -0.01em;
     }
@@ -323,20 +329,24 @@
       }
     }
 
+    /* Emerald Gradient Card Architecture */
     .card {
-      background-color: var(--surface-cream);
-      border: 1px solid var(--border-parchment);
-      border-left: 5px solid var(--emerald-core);
+      background: linear-gradient(145deg, var(--emerald-gradient-start) 0%, var(--emerald-gradient-mid) 60%, var(--emerald-gradient-end) 100%);
+      border: 1px solid var(--emerald-border);
+      border-left: 5px solid var(--sand-brown);
       border-radius: 8px;
       padding: 24px;
-      box-shadow: 0 3px 8px rgba(92, 58, 33, 0.04);
+      box-shadow: 0 6px 16px rgba(15, 40, 30, 0.12);
+      color: #E6F1EB;
     }
 
+    /* Card Headers in Warm Sand Brown */
     .card h3 {
       font-size: 1.2rem;
-      color: var(--emerald-forest);
+      color: var(--sand-brown);
       margin-bottom: 14px;
       font-weight: 800;
+      letter-spacing: -0.01em;
     }
 
     .service-list {
@@ -348,7 +358,7 @@
 
     .service-list li {
       font-size: 0.94rem;
-      color: var(--text-dark);
+      color: #F0F7F3;
       display: flex;
       align-items: flex-start;
       gap: 10px;
@@ -356,12 +366,12 @@
 
     .service-list li::before {
       content: "■";
-      color: var(--bark-brown);
+      color: var(--sand-brown);
       font-size: 0.8rem;
       line-height: 1.6;
     }
 
-    /* Gallery Grid */
+    /* Gallery Grid (Emerald Gradient Cards) */
     .gallery-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -381,8 +391,8 @@
     }
 
     .gallery-item {
-      background-color: var(--surface-cream);
-      border: 2px solid var(--border-parchment);
+      background: linear-gradient(145deg, var(--emerald-gradient-start) 0%, var(--emerald-gradient-mid) 60%, var(--emerald-gradient-end) 100%);
+      border: 1px solid var(--emerald-border);
       border-radius: 8px;
       padding: 22px 16px;
       text-align: center;
@@ -391,14 +401,14 @@
       align-items: center;
       justify-content: center;
       min-height: 170px;
-      box-shadow: 0 2px 6px rgba(92, 58, 33, 0.04);
+      box-shadow: 0 4px 12px rgba(15, 40, 30, 0.1);
     }
 
     .gallery-svg {
       width: 44px;
       height: 44px;
       fill: none;
-      stroke: var(--emerald-core);
+      stroke: var(--sand-brown);
       stroke-width: 1.8;
       margin-bottom: 12px;
     }
@@ -406,17 +416,17 @@
     .gallery-title {
       font-size: 0.92rem;
       font-weight: 800;
-      color: var(--emerald-deep);
+      color: #FFFFFF;
       margin-bottom: 4px;
     }
 
     .gallery-tag {
       font-size: 0.78rem;
       font-weight: 600;
-      color: var(--timber-brown);
+      color: var(--sand-light);
     }
 
-    /* Reviews Grid */
+    /* Reviews Grid (Emerald Gradient Cards) */
     .review-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -430,16 +440,17 @@
     }
 
     .review-card {
-      background-color: var(--surface-cream);
-      border: 1px solid var(--border-parchment);
-      border-top: 4px solid var(--timber-brown);
+      background: linear-gradient(145deg, var(--emerald-gradient-start) 0%, var(--emerald-gradient-mid) 60%, var(--emerald-gradient-end) 100%);
+      border: 1px solid var(--emerald-border);
+      border-top: 4px solid var(--sand-brown);
       border-radius: 8px;
       padding: 24px;
-      box-shadow: 0 3px 8px rgba(92, 58, 33, 0.04);
+      box-shadow: 0 6px 16px rgba(15, 40, 30, 0.12);
+      color: #F0F7F3;
     }
 
     .review-stars {
-      color: #C28220;
+      color: #EBB668;
       font-size: 1rem;
       margin-bottom: 10px;
       letter-spacing: 2px;
@@ -447,7 +458,7 @@
 
     .review-quote {
       font-size: 0.92rem;
-      color: var(--text-dark);
+      color: #F0F7F3;
       margin-bottom: 12px;
       font-style: italic;
       line-height: 1.55;
@@ -456,7 +467,7 @@
     .review-author {
       font-size: 0.85rem;
       font-weight: 800;
-      color: var(--timber-brown);
+      color: var(--sand-brown);
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -478,7 +489,7 @@
       display: flex;
       justify-content: space-between;
       padding: 11px 0;
-      border-bottom: 1px solid var(--border-parchment);
+      border-bottom: 1px solid rgba(217, 162, 106, 0.25);
       font-size: 0.9rem;
     }
 
@@ -487,24 +498,24 @@
     }
 
     .ops-label {
-      color: var(--timber-brown);
+      color: #D5E5DC;
       font-weight: 700;
     }
 
     .ops-val {
-      color: var(--emerald-deep);
+      color: #FFFFFF;
       font-weight: 800;
       text-align: right;
     }
 
     /* Footer */
     footer.site-footer {
-      background-color: var(--emerald-deep);
+      background-color: var(--emerald-gradient-end);
       color: #BACFC4;
       padding: 38px 0 28px 0;
       text-align: center;
       font-size: 0.84rem;
-      border-top: 4px solid var(--timber-brown);
+      border-top: 4px solid var(--bark-brown);
     }
 
     .footer-links {
@@ -516,7 +527,7 @@
     }
 
     .footer-links a {
-      color: #92E6B6;
+      color: var(--sand-brown);
       text-decoration: none;
       font-weight: 700;
     }
@@ -571,7 +582,7 @@
       </p>
     </header>
 
-    <!-- Trust Highlights -->
+    <!-- Trust Highlights (Emerald Gradient Cards) -->
     <div class="trust-strip">
       <div class="trust-box">
         <strong>Dry Rot &amp; Structural Care</strong>
@@ -591,7 +602,7 @@
       </div>
     </div>
 
-    <!-- Services Grid -->
+    <!-- Services Grid (Emerald Gradient Cards) -->
     <section id="services">
       <h2 class="section-title">Construction &amp; Remodeling Services</h2>
       <p class="section-subtitle">Delivering detail-oriented building, exterior upgrades, and rehabilitation work across Crescent City.</p>
@@ -639,7 +650,7 @@
       </div>
     </section>
 
-    <!-- Project Gallery -->
+    <!-- Project Gallery (Emerald Gradient Cards) -->
     <section id="gallery">
       <h2 class="section-title">Project Work &amp; Gallery</h2>
       <p class="section-subtitle">Examples of recent residential remodels, structural repairs, and exterior transformations.</p>
@@ -687,7 +698,7 @@
       </p>
     </section>
 
-    <!-- Client Reviews -->
+    <!-- Client Reviews (Emerald Gradient Cards) -->
     <section id="reviews">
       <h2 class="section-title">Verified Customer Feedback</h2>
       <p class="section-subtitle">Local homeowners share their experience working with Russ and the crew.</p>
@@ -714,7 +725,7 @@
       </div>
     </section>
 
-    <!-- Hours & Contact Info -->
+    <!-- Hours & Contact Info (Emerald Gradient Cards) -->
     <section id="contact">
       <h2 class="section-title">Schedule an Estimate</h2>
       <p class="section-subtitle">Reach out directly by phone or email to go over your remodel or project needs.</p>
@@ -727,11 +738,11 @@
           </div>
           <div class="ops-row">
             <span class="ops-label">Direct Call / Cell:</span>
-            <span class="ops-val"><a href="tel:7079544816" style="color: var(--emerald-core); text-decoration: none;">(707) 954-4816</a></span>
+            <span class="ops-val"><a href="tel:7079544816" style="color: var(--sand-brown); text-decoration: none;">(707) 954-4816</a></span>
           </div>
           <div class="ops-row">
             <span class="ops-label">Direct Email:</span>
-            <span class="ops-val"><a href="mailto:emeraldridgeconstruction707@gmail.com" style="color: var(--text-dark); text-decoration: none;">emeraldridgeconstruction707@gmail.com</a></span>
+            <span class="ops-val"><a href="mailto:emeraldridgeconstruction707@gmail.com" style="color: #FFFFFF; text-decoration: none;">emeraldridgeconstruction707@gmail.com</a></span>
           </div>
           <div class="ops-row">
             <span class="ops-label">Shop &amp; Mailing:</span>
@@ -739,21 +750,21 @@
           </div>
           <div class="ops-row">
             <span class="ops-label">Financing:</span>
-            <span class="ops-val" style="color: var(--emerald-bright);">Options Available</span>
+            <span class="ops-val" style="color: var(--sand-brown);">Options Available</span>
           </div>
         </div>
 
         <div class="card">
-          <h3 style="color: var(--emerald-deep); font-size: 1.05rem; margin-bottom: 12px;">Operating Schedule</h3>
+          <h3 style="color: var(--sand-brown); font-size: 1.05rem; margin-bottom: 12px;">Operating Schedule</h3>
           <div class="ops-row">
             <span class="ops-label">Monday – Saturday</span>
-            <span class="ops-val" style="color: var(--emerald-core);">7:00 AM – 5:30 PM</span>
+            <span class="ops-val" style="color: var(--sand-brown);">7:00 AM – 5:30 PM</span>
           </div>
           <div class="ops-row">
             <span class="ops-label">Sunday</span>
-            <span class="ops-val" style="color: var(--text-muted);">Closed</span>
+            <span class="ops-val" style="color: #9BB3A5;">Closed</span>
           </div>
-          <p style="margin-top: 14px; font-size: 0.85rem; color: var(--text-muted);">
+          <p style="margin-top: 14px; font-size: 0.85rem; color: #D5E5DC;">
             Ready to rehabilitate a home, fix dry rot, or get a house ready for sale? Call during morning or afternoon hours to schedule an on-site inspection and quote.
           </p>
         </div>
@@ -780,4 +791,3 @@
 
 </body>
 </html>
-  
