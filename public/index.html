@@ -106,17 +106,28 @@
 
   <style>
     :root {
-      --emerald-dark: #122B22;
-      --emerald-forest: #1E4638;
-      --emerald-bright: #2D6A4F;
-      --accent-copper: #D9822B;
-      --accent-cream: #F4F7F4;
-      --bg-slate: #0C1210;
-      --surface-card: #151E1B;
-      --surface-card-hover: #1A2722;
-      --border-edge: #283731;
-      --text-main: #F3F5F4;
-      --text-muted: #9BB0A6;
+      /* Cream Base Foundations */
+      --bg-cream: #FBF8F2;
+      --surface-cream: #FFFFFF;
+      --surface-subtle: #F5EFE6;
+      --border-parchment: #E2D7C8;
+
+      /* Rich Wood & Earth Browns */
+      --timber-brown: #5C3A21;
+      --timber-hover: #452B18;
+      --bark-brown: #7A4E2D;
+      --sand-brown: #8D6B4F;
+      --text-dark: #231C18;
+      --text-muted: #5E534B;
+
+      /* Deep & Vivid Emerald Greens */
+      --emerald-deep: #133324;
+      --emerald-forest: #1B4332;
+      --emerald-core: #2D6A4F;
+      --emerald-bright: #40916C;
+      --emerald-vivid: #52B788;
+      --emerald-light: #E8F4EE;
+
       --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
@@ -127,8 +138,8 @@
     }
 
     body {
-      background-color: var(--bg-slate);
-      color: var(--text-main);
+      background-color: var(--bg-cream);
+      color: var(--text-dark);
       font-family: var(--font-stack);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -136,20 +147,20 @@
 
     /* Top Operational Bar */
     .top-status-bar {
-      background-color: var(--emerald-dark);
-      color: var(--text-muted);
-      border-bottom: 2px solid var(--accent-copper);
-      font-size: 0.82rem;
-      padding: 8px 16px;
+      background-color: var(--emerald-deep);
+      color: #E2EFE9;
+      border-bottom: 3px solid var(--bark-brown);
+      font-size: 0.84rem;
+      padding: 9px 16px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 14px;
+      gap: 16px;
       font-weight: 600;
     }
 
     .top-status-bar span {
-      color: var(--accent-copper);
+      color: #7BE4B5;
     }
 
     .container {
@@ -160,57 +171,54 @@
 
     /* Hero Section */
     header.hero {
-      padding: 44px 0 32px 0;
+      padding: 50px 0 38px 0;
       text-align: center;
-      border-bottom: 1px solid var(--border-edge);
+      border-bottom: 2px solid var(--border-parchment);
     }
 
     .badge-location {
       display: inline-block;
-      background-color: rgba(45, 106, 79, 0.2);
-      color: #74C69D;
+      background-color: var(--emerald-light);
+      color: var(--emerald-core);
       border: 1px solid var(--emerald-bright);
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 4px;
       font-size: 0.8rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
 
     h1 {
-      font-size: 2.3rem;
+      font-size: 2.6rem;
       font-weight: 900;
       letter-spacing: -0.02em;
-      color: #FFFFFF;
+      color: var(--emerald-deep);
       line-height: 1.15;
       margin-bottom: 10px;
     }
 
     .hero-owner {
-      font-size: 1.1rem;
-      color: var(--text-muted);
+      font-size: 1.15rem;
+      color: var(--timber-brown);
+      font-weight: 700;
       margin-bottom: 14px;
     }
 
-    .hero-owner strong {
-      color: var(--text-main);
-    }
-
     .hero-desc {
-      font-size: 1.02rem;
+      font-size: 1.05rem;
       color: var(--text-muted);
-      max-width: 740px;
-      margin: 0 auto 24px auto;
+      max-width: 760px;
+      margin: 0 auto 26px auto;
     }
 
     .action-row {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
-      margin-bottom: 20px;
+      gap: 14px;
+      margin-bottom: 22px;
     }
 
     .btn {
@@ -218,58 +226,63 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      padding: 13px 22px;
+      padding: 14px 24px;
       border-radius: 6px;
       font-size: 0.95rem;
-      font-weight: 700;
+      font-weight: 800;
       text-decoration: none;
-      transition: background-color 0.15s ease, border-color 0.15s ease;
+      transition: all 0.15s ease-in-out;
       cursor: pointer;
     }
 
     .btn-primary {
-      background-color: var(--accent-copper);
-      color: #000000;
-      border: 1px solid #B86B1E;
+      background-color: var(--emerald-core);
+      color: #FFFFFF;
+      border: 2px solid var(--emerald-forest);
+      box-shadow: 0 4px 10px rgba(45, 106, 79, 0.25);
     }
 
     .btn-primary:hover {
-      background-color: #E28F38;
+      background-color: var(--emerald-forest);
+      border-color: var(--emerald-deep);
     }
 
     .btn-secondary {
-      background-color: var(--surface-card);
-      color: #FFFFFF;
-      border: 1px solid var(--border-edge);
+      background-color: var(--surface-cream);
+      color: var(--timber-brown);
+      border: 2px solid var(--timber-brown);
     }
 
     .btn-secondary:hover {
-      background-color: var(--surface-card-hover);
-      border-color: var(--emerald-bright);
+      background-color: var(--surface-subtle);
+      border-color: var(--timber-hover);
     }
 
     /* Trust / Highlight Strip */
     .trust-strip {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      margin: 28px 0;
+      gap: 14px;
+      margin: 32px 0 16px 0;
     }
 
     .trust-box {
-      background-color: var(--surface-card);
-      border: 1px solid var(--border-edge);
-      padding: 14px 16px;
+      background-color: var(--surface-cream);
+      border: 1px solid var(--border-parchment);
+      border-top: 4px solid var(--emerald-core);
+      padding: 16px;
       border-radius: 6px;
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.88rem;
+      box-shadow: 0 2px 6px rgba(92, 58, 33, 0.05);
     }
 
     .trust-box strong {
       display: block;
-      color: #FFFFFF;
-      font-size: 0.95rem;
-      margin-bottom: 2px;
+      color: var(--emerald-deep);
+      font-size: 0.96rem;
+      margin-bottom: 4px;
+      font-weight: 800;
     }
 
     .trust-box span {
@@ -278,29 +291,30 @@
 
     /* Section Foundations */
     section {
-      padding: 38px 0;
-      border-bottom: 1px solid var(--border-edge);
+      padding: 42px 0;
+      border-bottom: 2px solid var(--border-parchment);
     }
 
     .section-title {
-      font-size: 1.55rem;
-      font-weight: 800;
-      color: #FFFFFF;
+      font-size: 1.65rem;
+      font-weight: 900;
+      color: var(--emerald-deep);
       margin-bottom: 6px;
       letter-spacing: -0.01em;
     }
 
     .section-subtitle {
-      color: var(--text-muted);
-      font-size: 0.92rem;
-      margin-bottom: 22px;
+      color: var(--timber-brown);
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 24px;
     }
 
     /* Services Grid */
     .services-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 18px;
+      gap: 20px;
     }
 
     @media (min-width: 768px) {
@@ -310,29 +324,31 @@
     }
 
     .card {
-      background-color: var(--surface-card);
-      border: 1px solid var(--border-edge);
+      background-color: var(--surface-cream);
+      border: 1px solid var(--border-parchment);
+      border-left: 5px solid var(--emerald-core);
       border-radius: 8px;
-      padding: 22px;
+      padding: 24px;
+      box-shadow: 0 3px 8px rgba(92, 58, 33, 0.04);
     }
 
     .card h3 {
-      font-size: 1.15rem;
-      color: #92E6B6;
-      margin-bottom: 12px;
-      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--emerald-forest);
+      margin-bottom: 14px;
+      font-weight: 800;
     }
 
     .service-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
     }
 
     .service-list li {
-      font-size: 0.92rem;
-      color: var(--text-main);
+      font-size: 0.94rem;
+      color: var(--text-dark);
       display: flex;
       align-items: flex-start;
       gap: 10px;
@@ -340,9 +356,9 @@
 
     .service-list li::before {
       content: "■";
-      color: var(--accent-copper);
-      font-size: 0.75rem;
-      line-height: 1.7;
+      color: var(--bark-brown);
+      font-size: 0.8rem;
+      line-height: 1.6;
     }
 
     /* Gallery Grid */
@@ -365,44 +381,46 @@
     }
 
     .gallery-item {
-      background-color: var(--surface-card);
-      border: 1px solid var(--border-edge);
-      border-radius: 6px;
-      padding: 16px;
+      background-color: var(--surface-cream);
+      border: 2px solid var(--border-parchment);
+      border-radius: 8px;
+      padding: 22px 16px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 160px;
+      min-height: 170px;
+      box-shadow: 0 2px 6px rgba(92, 58, 33, 0.04);
     }
 
     .gallery-svg {
-      width: 42px;
-      height: 42px;
+      width: 44px;
+      height: 44px;
       fill: none;
-      stroke: var(--text-muted);
-      stroke-width: 1.6;
-      margin-bottom: 10px;
+      stroke: var(--emerald-core);
+      stroke-width: 1.8;
+      margin-bottom: 12px;
     }
 
     .gallery-title {
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: var(--text-main);
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--emerald-deep);
       margin-bottom: 4px;
     }
 
     .gallery-tag {
-      font-size: 0.76rem;
-      color: var(--text-muted);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--timber-brown);
     }
 
     /* Reviews Grid */
     .review-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 18px;
+      gap: 20px;
     }
 
     @media (min-width: 768px) {
@@ -412,32 +430,33 @@
     }
 
     .review-card {
-      background-color: var(--surface-card);
-      border: 1px solid var(--border-edge);
-      border-left: 4px solid var(--accent-copper);
-      border-radius: 6px;
-      padding: 20px;
+      background-color: var(--surface-cream);
+      border: 1px solid var(--border-parchment);
+      border-top: 4px solid var(--timber-brown);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 3px 8px rgba(92, 58, 33, 0.04);
     }
 
     .review-stars {
-      color: var(--accent-copper);
-      font-size: 0.95rem;
-      margin-bottom: 8px;
+      color: #C28220;
+      font-size: 1rem;
+      margin-bottom: 10px;
       letter-spacing: 2px;
     }
 
     .review-quote {
-      font-size: 0.9rem;
-      color: var(--text-main);
+      font-size: 0.92rem;
+      color: var(--text-dark);
       margin-bottom: 12px;
       font-style: italic;
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     .review-author {
-      font-size: 0.82rem;
+      font-size: 0.85rem;
       font-weight: 800;
-      color: var(--text-muted);
+      color: var(--timber-brown);
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -458,9 +477,9 @@
     .ops-row {
       display: flex;
       justify-content: space-between;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border-edge);
-      font-size: 0.88rem;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--border-parchment);
+      font-size: 0.9rem;
     }
 
     .ops-row:last-child {
@@ -468,46 +487,50 @@
     }
 
     .ops-label {
-      color: var(--text-muted);
-      font-weight: 600;
+      color: var(--timber-brown);
+      font-weight: 700;
     }
 
     .ops-val {
-      color: #FFFFFF;
-      font-weight: 700;
+      color: var(--emerald-deep);
+      font-weight: 800;
       text-align: right;
     }
 
     /* Footer */
     footer.site-footer {
-      background-color: #070B09;
-      padding: 32px 0 24px 0;
+      background-color: var(--emerald-deep);
+      color: #BACFC4;
+      padding: 38px 0 28px 0;
       text-align: center;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      border-top: 2px solid var(--border-edge);
+      font-size: 0.84rem;
+      border-top: 4px solid var(--timber-brown);
     }
 
     .footer-links {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 14px;
+      gap: 18px;
+      margin-bottom: 16px;
     }
 
     .footer-links a {
-      color: var(--accent-copper);
+      color: #92E6B6;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
     }
 
     .footer-legal {
       max-width: 760px;
       margin: 10px auto 0 auto;
-      font-size: 0.74rem;
-      line-height: 1.4;
-      color: #64746D;
+      font-size: 0.76rem;
+      line-height: 1.5;
+      color: #8BA899;
     }
   </style>
 </head>
@@ -543,7 +566,7 @@
           Find on Map
         </a>
       </div>
-      <p style="font-size: 0.88rem; color: var(--accent-copper); font-weight: 700;">
+      <p style="font-size: 0.9rem; color: var(--timber-brown); font-weight: 800;">
         ★ Flexible customer financing options available for eligible services
       </p>
     </header>
@@ -616,14 +639,14 @@
       </div>
     </section>
 
-    <!-- Project Gallery (Clean, Zero-Risk SVG Placeholders) -->
+    <!-- Project Gallery -->
     <section id="gallery">
       <h2 class="section-title">Project Work &amp; Gallery</h2>
       <p class="section-subtitle">Examples of recent residential remodels, structural repairs, and exterior transformations.</p>
 
       <div class="gallery-grid">
         <div class="gallery-item">
-          <svg class="gallery-svg" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="gallery-svg" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             <polyline points="9 22 9 12 15 12 15 22"></polyline>
           </svg>
@@ -632,7 +655,7 @@
         </div>
 
         <div class="gallery-item">
-          <svg class="gallery-svg" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="gallery-svg" viewBox="0 0 24 24">
             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
             <line x1="3" y1="9" x2="21" y2="9"></line>
             <line x1="9" y1="21" x2="9" y2="9"></line>
@@ -642,7 +665,7 @@
         </div>
 
         <div class="gallery-item">
-          <svg class="gallery-svg" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="gallery-svg" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
           </svg>
           <div class="gallery-title">Dry Rot &amp; Framing</div>
@@ -650,7 +673,7 @@
         </div>
 
         <div class="gallery-item">
-          <svg class="gallery-svg" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="gallery-svg" viewBox="0 0 24 24">
             <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
             <polyline points="2 17 12 22 22 17"></polyline>
             <polyline points="2 12 12 17 22 12"></polyline>
@@ -660,7 +683,7 @@
         </div>
       </div>
       <p style="margin-top: 14px; font-size: 0.85rem; color: var(--text-muted); text-align: center;">
-        <em>Photos of specific on-site builds and finished projects can be dropped right into these image cards upon Russ's review.</em>
+        <em>Photos of specific on-site builds and finished projects can be dropped right into these cards upon Russ's review.</em>
       </p>
     </section>
 
@@ -704,11 +727,11 @@
           </div>
           <div class="ops-row">
             <span class="ops-label">Direct Call / Cell:</span>
-            <span class="ops-val"><a href="tel:7079544816" style="color: var(--accent-copper); text-decoration: none;">(707) 954-4816</a></span>
+            <span class="ops-val"><a href="tel:7079544816" style="color: var(--emerald-core); text-decoration: none;">(707) 954-4816</a></span>
           </div>
           <div class="ops-row">
             <span class="ops-label">Direct Email:</span>
-            <span class="ops-val"><a href="mailto:emeraldridgeconstruction707@gmail.com" style="color: var(--text-main); text-decoration: none;">emeraldridgeconstruction707@gmail.com</a></span>
+            <span class="ops-val"><a href="mailto:emeraldridgeconstruction707@gmail.com" style="color: var(--text-dark); text-decoration: none;">emeraldridgeconstruction707@gmail.com</a></span>
           </div>
           <div class="ops-row">
             <span class="ops-label">Shop &amp; Mailing:</span>
@@ -716,21 +739,21 @@
           </div>
           <div class="ops-row">
             <span class="ops-label">Financing:</span>
-            <span class="ops-val" style="color: #74C69D;">Options Available</span>
+            <span class="ops-val" style="color: var(--emerald-bright);">Options Available</span>
           </div>
         </div>
 
         <div class="card">
-          <h3 style="color: #FFFFFF; font-size: 1.05rem; margin-bottom: 12px;">Operating Schedule</h3>
+          <h3 style="color: var(--emerald-deep); font-size: 1.05rem; margin-bottom: 12px;">Operating Schedule</h3>
           <div class="ops-row">
             <span class="ops-label">Monday – Saturday</span>
-            <span class="ops-val" style="color: #74C69D;">7:00 AM – 5:30 PM</span>
+            <span class="ops-val" style="color: var(--emerald-core);">7:00 AM – 5:30 PM</span>
           </div>
           <div class="ops-row">
             <span class="ops-label">Sunday</span>
             <span class="ops-val" style="color: var(--text-muted);">Closed</span>
           </div>
-          <p style="margin-top: 14px; font-size: 0.84rem; color: var(--text-muted);">
+          <p style="margin-top: 14px; font-size: 0.85rem; color: var(--text-muted);">
             Ready to rehabilitate a home, fix dry rot, or get a house ready for sale? Call during morning or afternoon hours to schedule an on-site inspection and quote.
           </p>
         </div>
@@ -757,3 +780,4 @@
 
 </body>
 </html>
+ 
