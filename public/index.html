@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerald Ridge Construction | Crescent City, CA</title>
+  <meta name="description" content="Home rehabilitation, kitchen and bath remodels, siding, windows, dry rot repair, decks, ramps, framing, and cleanups in Crescent City and Del Norte County. Owner Russ Olson.">
+
+  <!-- OpenGraph / Social Previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Emerald Ridge Construction">
+  <meta property="og:title" content="Emerald Ridge Construction | Crescent City, CA">
+  <meta property="og:description" content="Quality home remodels, dry rot repair, siding, windows, and site rehabilitation. Financing available. Call Russ Olson for an estimate.">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Emerald Ridge Construction | Crescent City, CA">
+  <meta name="twitter:description" content="Quality home remodels, dry rot repair, siding, windows, and site rehabilitation. Financing available. Call Russ Olson for an estimate.">
+
+  <!-- Geographic Location Tags for Local Search -->
+  <meta name="geo.region" content="US-CA">
+  <meta name="geo.placename" content="Crescent City, California">
+
+  <!-- AI Discovery & Search Engine Structured Data (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Emerald Ridge Construction",
+    "founder": {
+      "@type": "Person",
+      "name": "Russ Olson"
+    },
+    "telephone": "+1-707-954-4816",
+    "email": "emeraldridgeconstruction707@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "108 Purdy Lane",
+      "addressLocality": "Crescent City",
+      "addressRegion": "CA",
+      "postalCode": "95531",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:00",
+        "closes": "17:30"
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Crescent City"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Del Norte County"
+      }
+    ],
+    "paymentAccepted": "Customer Financing Available for Eligible Services",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Construction & Remodeling Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Kitchen & Bathroom Remodeling"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Dry Rot Inspections & Structural Repairs"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Siding Installation & Window Replacement"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Home Rehabilitation & Preparation to Sell"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Decks, Ramps & Site Cleanups"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --emerald-dark: #122B22;
+      --emerald-forest: #1E4638;
+      --emerald-bright: #2D6A4F;
+      --accent-copper: #D9822B;
+      --accent-cream: #F4F7F4;
+      --bg-slate: #0C1210;
+      --surface-card: #151E1B;
+      --surface-card-hover: #1A2722;
+      --border-edge: #283731;
+      --text-main: #F3F5F4;
+      --text-muted: #9BB0A6;
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-slate);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Operational Bar */
+    .top-status-bar {
+      background-color: var(--emerald-dark);
+      color: var(--text-muted);
+      border-bottom: 2px solid var(--accent-copper);
+      font-size: 0.82rem;
+      padding: 8px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      font-weight: 600;
+    }
+
+    .top-status-bar span {
+      color: var(--accent-copper);
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    header.hero {
+      padding: 44px 0 32px 0;
+      text-align: center;
+      border-bottom: 1px solid var(--border-edge);
+    }
+
+    .badge-location {
+      display: inline-block;
+      background-color: rgba(45, 106, 79, 0.2);
+      color: #74C69D;
+      border: 1px solid var(--emerald-bright);
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .hero-owner {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .hero-owner strong {
+      color: var(--text-main);
+    }
+
+    .hero-desc {
+      font-size: 1.02rem;
+      color: var(--text-muted);
+      max-width: 740px;
+      margin: 0 auto 24px auto;
+    }
+
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 22px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-copper);
+      color: #000000;
+      border: 1px solid #B86B1E;
+    }
+
+    .btn-primary:hover {
+      background-color: #E28F38;
+    }
+
+    .btn-secondary {
+      background-color: var(--surface-card);
+      color: #FFFFFF;
+      border: 1px solid var(--border-edge);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--surface-card-hover);
+      border-color: var(--emerald-bright);
+    }
+
+    /* Trust / Highlight Strip */
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 28px 0;
+    }
+
+    .trust-box {
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-edge);
+      padding: 14px 16px;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    .trust-box strong {
+      display: block;
+      color: #FFFFFF;
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .trust-box span {
+      color: var(--text-muted);
+    }
+
+    /* Section Foundations */
+    section {
+      padding: 38px 0;
+      border-bottom: 1px solid var(--border-edge);
+    }
+
+    .section-title {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 22px;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card {
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-edge);
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      color: #92E6B6;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .service-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .service-list li {
+      font-size: 0.92rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .service-list li::before {
+      content: "■";
+      color: var(--accent-copper);
+      font-size: 0.75rem;
+      line-height: 1.7;
+    }
+
+    /* Gallery Grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 640px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .gallery-item {
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-edge);
+      border-radius: 6px;
+      padding: 16px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 160px;
+    }
+
+    .gallery-svg {
+      width: 42px;
+      height: 42px;
+      fill: none;
+      stroke: var(--text-muted);
+      stroke-width: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .gallery-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .gallery-tag {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+    }
+
+    /* Reviews Grid */
+    .review-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .review-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .review-card {
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-edge);
+      border-left: 4px solid var(--accent-copper);
+      border-radius: 6px;
+      padding: 20px;
+    }
+
+    .review-stars {
+      color: var(--accent-copper);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+
+    .review-quote {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .review-author {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Operations & Hours */
+    .ops-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .ops-grid {
+        grid-template-columns: 1.2fr 1fr;
+      }
+    }
+
+    .ops-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-edge);
+      font-size: 0.88rem;
+    }
+
+    .ops-row:last-child {
+      border-bottom: none;
+    }
+
+    .ops-label {
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .ops-val {
+      color: #FFFFFF;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background-color: #070B09;
+      padding: 32px 0 24px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      border-top: 2px solid var(--border-edge);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .footer-links a {
+      color: var(--accent-copper);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-legal {
+      max-width: 760px;
+      margin: 10px auto 0 auto;
+      font-size: 0.74rem;
+      line-height: 1.4;
+      color: #64746D;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Operational Banner -->
+  <div class="top-status-bar">
+    <div>HOURS: <span>Mon–Sat 7:00 AM – 5:30 PM</span></div>
+    <div>DIRECT CALL / CELL: <span>(707) 954-4816</span></div>
+    <div>LOCATION: <span>Crescent City, CA</span></div>
+  </div>
+
+  <div class="container">
+
+    <!-- Hero Header -->
+    <header class="hero">
+      <div class="badge-location">Crescent City &bull; Residential &amp; Commercial</div>
+      <h1>Emerald Ridge Construction</h1>
+      <p class="hero-owner">Russ Olson, Owner &bull; 108 Purdy Lane, Crescent City, CA</p>
+      <p class="hero-desc">
+        Specializing in home rehabilitation, kitchens and bathrooms, siding, window replacements, all dry rot repairs, and complete site preparation to get houses ready to sell.
+      </p>
+
+      <div class="action-row">
+        <a href="tel:7079544816" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call for Estimate: (707) 954-4816
+        </a>
+        <a href="mailto:emeraldridgeconstruction707@gmail.com" class="btn btn-secondary">
+          Email Projects &amp; Details
+        </a>
+        <a href="https://maps.google.com/?q=108+Purdy+Lane,+Crescent+City,+CA" target="_blank" rel="noopener" class="btn btn-secondary">
+          Find on Map
+        </a>
+      </div>
+      <p style="font-size: 0.88rem; color: var(--accent-copper); font-weight: 700;">
+        ★ Flexible customer financing options available for eligible services
+      </p>
+    </header>
+
+    <!-- Trust Highlights -->
+    <div class="trust-strip">
+      <div class="trust-box">
+        <strong>Dry Rot &amp; Structural Care</strong>
+        <span>Inspections, framing &amp; foundations</span>
+      </div>
+      <div class="trust-box">
+        <strong>Home Rehab &amp; Cleanups</strong>
+        <span>Trash haul &amp; getting homes ready to sell</span>
+      </div>
+      <div class="trust-box">
+        <strong>Kitchens, Baths &amp; Siding</strong>
+        <span>Full remodels, tile, flooring &amp; windows</span>
+      </div>
+      <div class="trust-box">
+        <strong>Customer Financing</strong>
+        <span>Financing options for eligible projects</span>
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <section id="services">
+      <h2 class="section-title">Construction &amp; Remodeling Services</h2>
+      <p class="section-subtitle">Delivering detail-oriented building, exterior upgrades, and rehabilitation work across Crescent City.</p>
+
+      <div class="services-grid">
+        <div class="card">
+          <h3>Remodeling &amp; Repairs</h3>
+          <ul class="service-list">
+            <li>Kitchen and bathroom complete remodels</li>
+            <li>Custom backsplashes, tile work, and appliance installation</li>
+            <li>General home building and additions</li>
+            <li>Residential and commercial building repairs</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Exteriors &amp; Upgrades</h3>
+          <ul class="service-list">
+            <li>Window replacements and custom sizing</li>
+            <li>Siding installation and siding repair</li>
+            <li>Floor updates and subfloor leveling</li>
+            <li>Interior and exterior painting</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Structural &amp; Dry Rot Work</h3>
+          <ul class="service-list">
+            <li>Comprehensive dry rot inspections and repair</li>
+            <li>Structural framing and framing reinforcement</li>
+            <li>Foundation repairs and leveling checks</li>
+            <li>Coastal weatherization and rot mitigation</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Specialized Projects &amp; Cleanups</h3>
+          <ul class="service-list">
+            <li>Custom decks, wheelchair ramps, and entryways</li>
+            <li>Plumbing work and system repairs</li>
+            <li>Site rehabilitation and getting houses ready to sell</li>
+            <li>Trash removal, lot cleanups, and tree removal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Gallery (Clean, Zero-Risk SVG Placeholders) -->
+    <section id="gallery">
+      <h2 class="section-title">Project Work &amp; Gallery</h2>
+      <p class="section-subtitle">Examples of recent residential remodels, structural repairs, and exterior transformations.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <svg class="gallery-svg" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <div class="gallery-title">Kitchen Remodels</div>
+          <div class="gallery-tag">Flooring, Backsplash &amp; Appliances</div>
+        </div>
+
+        <div class="gallery-item">
+          <svg class="gallery-svg" viewBox="0 0 24 24" stroke="currentColor">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="3" y1="9" x2="21" y2="9"></line>
+            <line x1="9" y1="21" x2="9" y2="9"></line>
+          </svg>
+          <div class="gallery-title">Windows &amp; Siding</div>
+          <div class="gallery-tag">Exterior Upgrades &amp; Weatherproofing</div>
+        </div>
+
+        <div class="gallery-item">
+          <svg class="gallery-svg" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          </svg>
+          <div class="gallery-title">Dry Rot &amp; Framing</div>
+          <div class="gallery-tag">Structural Restoration &amp; Foundations</div>
+        </div>
+
+        <div class="gallery-item">
+          <svg class="gallery-svg" viewBox="0 0 24 24" stroke="currentColor">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <div class="gallery-title">Decks &amp; Ramps</div>
+          <div class="gallery-tag">Custom Woodwork &amp; Access Ramps</div>
+        </div>
+      </div>
+      <p style="margin-top: 14px; font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+        <em>Photos of specific on-site builds and finished projects can be dropped right into these image cards upon Russ's review.</em>
+      </p>
+    </section>
+
+    <!-- Client Reviews -->
+    <section id="reviews">
+      <h2 class="section-title">Verified Customer Feedback</h2>
+      <p class="section-subtitle">Local homeowners share their experience working with Russ and the crew.</p>
+
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            "We hired Emerald Ridge to assist with a kitchen remodel. The quality of work was impeccable. They were very responsive, professional, and easy to work with, ensuring that we were completely satisfied. Every detail from floors, backsplash, and appliance installation were all done to perfection. Communication was great and work was done timely and efficiently! We’d definitely hire them again if need be."
+          </p>
+          <p class="review-quote" style="margin-top: 8px;">
+            "This company is also very community minded and donated their labor to assist with work on the Point of Honor Veterans Memorial. Again the quality of work was beyond reproach."
+          </p>
+          <div class="review-author">— Doug Plack</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            "Russ and his crew were amazing! They worked so quick and efficiently. Very easy to communicate with and responsive. We felt well taken care of and would recommend them to anyone."
+          </p>
+          <div class="review-author" style="margin-top: 24px;">— Crystal Hatter</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours & Contact Info -->
+    <section id="contact">
+      <h2 class="section-title">Schedule an Estimate</h2>
+      <p class="section-subtitle">Reach out directly by phone or email to go over your remodel or project needs.</p>
+
+      <div class="ops-grid">
+        <div class="card">
+          <div class="ops-row">
+            <span class="ops-label">Owner / Lead:</span>
+            <span class="ops-val">Russ Olson</span>
+          </div>
+          <div class="ops-row">
+            <span class="ops-label">Direct Call / Cell:</span>
+            <span class="ops-val"><a href="tel:7079544816" style="color: var(--accent-copper); text-decoration: none;">(707) 954-4816</a></span>
+          </div>
+          <div class="ops-row">
+            <span class="ops-label">Direct Email:</span>
+            <span class="ops-val"><a href="mailto:emeraldridgeconstruction707@gmail.com" style="color: var(--text-main); text-decoration: none;">emeraldridgeconstruction707@gmail.com</a></span>
+          </div>
+          <div class="ops-row">
+            <span class="ops-label">Shop &amp; Mailing:</span>
+            <span class="ops-val">108 Purdy Lane, Crescent City, CA</span>
+          </div>
+          <div class="ops-row">
+            <span class="ops-label">Financing:</span>
+            <span class="ops-val" style="color: #74C69D;">Options Available</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="color: #FFFFFF; font-size: 1.05rem; margin-bottom: 12px;">Operating Schedule</h3>
+          <div class="ops-row">
+            <span class="ops-label">Monday – Saturday</span>
+            <span class="ops-val" style="color: #74C69D;">7:00 AM – 5:30 PM</span>
+          </div>
+          <div class="ops-row">
+            <span class="ops-label">Sunday</span>
+            <span class="ops-val" style="color: var(--text-muted);">Closed</span>
+          </div>
+          <p style="margin-top: 14px; font-size: 0.84rem; color: var(--text-muted);">
+            Ready to rehabilitate a home, fix dry rot, or get a house ready for sale? Call during morning or afternoon hours to schedule an on-site inspection and quote.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="tel:7079544816">Call (707) 954-4816</a>
+        <a href="mailto:emeraldridgeconstruction707@gmail.com">Email Us</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+      <p>&copy; 2026 Emerald Ridge Construction. All rights reserved.</p>
+      <p class="footer-legal">
+        Serving Crescent City and Del Norte County. Dedicated to quality construction, home rehabilitation, dry rot restoration, and community service.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
